@@ -143,29 +143,29 @@
 </div>
 
 <div class="pantalla active" id="p1">
-    <button class="boton" id="btn-Fruta" onclick="abrirCategoria('Fruta')"><i class="fas fa-apple-whole f"></i><span data-i18n="cat_fruit">Fruta</span><span class="subtotal-tag" id="sub-Fruta">0.00€</span></button>
-    <button class="boton" id="btn-Verdura" onclick="abrirCategoria('Verdura')"><i class="fas fa-carrot f"></i><span data-i18n="cat_veg">Verdura</span><span class="subtotal-tag" id="sub-Verdura">0.00€</span></button>
-    <button class="boton" id="btn-Carne" onclick="abrirCategoria('Carne')"><i class="fas fa-drumstick-bite c"></i><span data-i18n="cat_meat">Carnicería</span><span class="subtotal-tag" id="sub-Carne">0.00€</span></button>
-    <button class="boton" id="btn-Pescado" onclick="abrirCategoria('Pescado')"><i class="fas fa-fish l"></i><span data-i18n="cat_fish">Pescadería</span><span class="subtotal-tag" id="sub-Pescado">0.00€</span></button>
-    <button class="boton" id="btn-Leche" onclick="abrirCategoria('Leche')"><i class="fas fa-droplet l"></i><span data-i18n="cat_milk">Leche</span><span class="subtotal-tag" id="sub-Leche">0.00€</span></button>
-    <button class="boton" id="btn-Yogures" onclick="abrirCategoria('Yogures')"><i class="fas fa-ice-cream l"></i><span data-i18n="cat_dairy">Lácteos</span><span class="subtotal-tag" id="sub-Yogures">0.00€</span></button>
-    <button class="boton" id="btn-Embutido" onclick="abrirCategoria('Embutido')"><i class="fas fa-bacon c"></i><span data-i18n="cat_coldcuts">Embutidos</span><span class="subtotal-tag" id="sub-Embutido">0.00€</span></button>
-    <button class="boton" id="btn-Pan" onclick="abrirCategoria('Pan')"><i class="fas fa-bread-slice d"></i><span data-i18n="cat_bread">Pan/Bollería</span><span class="subtotal-tag" id="sub-Pan">0.00€</span></button>
-    <button class="boton" id="btn-Pasta/Arroz" onclick="abrirCategoria('Pasta/Arroz')"><i class="fas fa-box d"></i><span data-i18n="cat_pantry">Legumbres/Pasta/Arroz</span><span class="subtotal-tag" id="sub-Pasta/Arroz">0.00€</span></button>
-    <button class="boton" id="btn-Huevos" onclick="abrirCategoria('Huevos')"><i class="fas fa-egg d"></i><span data-i18n="cat_eggs">Huevos</span><span class="subtotal-tag" id="sub-Huevos">0.00€</span></button>
+    <button class="boton" id="btn-Fruta" onclick="abrirCategoria('Fruta')"><i class="fas fa-apple-whole f"></i><span id="lbl-Fruta" data-i18n="cat_fruit">Fruta</span><span class="subtotal-tag" id="sub-Fruta">0.00€</span></button>
+    <button class="boton" id="btn-Verdura" onclick="abrirCategoria('Verdura')"><i class="fas fa-carrot f"></i><span id="lbl-Verdura" data-i18n="cat_veg">Verdura</span><span class="subtotal-tag" id="sub-Verdura">0.00€</span></button>
+    <button class="boton" id="btn-Carne" onclick="abrirCategoria('Carne')"><i class="fas fa-drumstick-bite c"></i><span id="lbl-Carne" data-i18n="cat_meat">Carnicería</span><span class="subtotal-tag" id="sub-Carne">0.00€</span></button>
+    <button class="boton" id="btn-Pescado" onclick="abrirCategoria('Pescado')"><i class="fas fa-fish l"></i><span id="lbl-Pescado" data-i18n="cat_fish">Pescadería</span><span class="subtotal-tag" id="sub-Pescado">0.00€</span></button>
+    <button class="boton" id="btn-Leche" onclick="abrirCategoria('Leche')"><i class="fas fa-droplet l"></i><span id="lbl-Leche" data-i18n="cat_milk">Leche</span><span class="subtotal-tag" id="sub-Leche">0.00€</span></button>
+    <button class="boton" id="btn-Yogures" onclick="abrirCategoria('Yogures')"><i class="fas fa-ice-cream l"></i><span id="lbl-Yogures" data-i18n="cat_dairy">Lácteos</span><span class="subtotal-tag" id="sub-Yogures">0.00€</span></button>
+    <button class="boton" id="btn-Embutido" onclick="abrirCategoria('Embutido')"><i class="fas fa-bacon c"></i><span id="lbl-Embutido" data-i18n="cat_coldcuts">Embutidos</span><span class="subtotal-tag" id="sub-Embutido">0.00€</span></button>
+    <button class="boton" id="btn-Pan" onclick="abrirCategoria('Pan')"><i class="fas fa-bread-slice d"></i><span id="lbl-Pan" data-i18n="cat_bread">Pan/Bollería</span><span class="subtotal-tag" id="sub-Pan">0.00€</span></button>
+    <button class="boton" id="btn-Pasta/Arroz" onclick="abrirCategoria('Pasta/Arroz')"><i class="fas fa-box d"></i><span id="lbl-Pasta/Arroz" data-i18n="cat_pantry">Legumbres/Pasta/Arroz</span><span class="subtotal-tag" id="sub-Pasta/Arroz">0.00€</span></button>
+    <button class="boton" id="btn-Huevos" onclick="abrirCategoria('Huevos')"><i class="fas fa-egg d"></i><span id="lbl-Huevos" data-i18n="cat_eggs">Huevos</span><span class="subtotal-tag" id="sub-Huevos">0.00€</span></button>
 </div>
 
 <div class="pantalla" id="p2">
-    <button class="boton" id="btn-Aceite" onclick="abrirCategoria('Aceite')"><i class="fas fa-oil-can d"></i><span data-i18n="cat_oils">Aceites</span><span class="subtotal-tag" id="sub-Aceite">0.00€</span></button>
-    <button class="boton" id="btn-Conservas" onclick="abrirCategoria('Conservas')"><i class="fas fa-jar d"></i><span data-i18n="cat_canned">Conservas/Aceitunas</span><span class="subtotal-tag" id="sub-Conservas">0.00€</span></button>
-    <button class="boton" id="btn-Café" onclick="abrirCategoria('Café')"><i class="fas fa-mug-hot d"></i><span data-i18n="cat_coffee">Café/Cacao</span><span class="subtotal-tag" id="sub-Café">0.00€</span></button>
-    <button class="boton" id="btn-Bebidas" onclick="abrirCategoria('Bebidas')"><i class="fas fa-bottle-water l"></i><span data-i18n="cat_drinks">Bebidas</span><span class="subtotal-tag" id="sub-Bebidas">0.00€</span></button>
-    <button class="boton" id="btn-Dulces" onclick="abrirCategoria('Dulces')"><i class="fas fa-cookie c"></i><span data-i18n="cat_snacks">Snacks/Dulces</span><span class="subtotal-tag" id="sub-Dulces">0.00€</span></button>
-    <button class="boton" id="btn-Congelado" onclick="abrirCategoria('Congelado')"><i class="fas fa-snowflake l"></i><span data-i18n="cat_frozen">Congelados</span><span class="subtotal-tag" id="sub-Congelado">0.00€</span></button>
-    <button class="boton" id="btn-Limpieza" onclick="abrirCategoria('Limpieza')"><i class="fas fa-soap h"></i><span data-i18n="cat_cleaning">Limpieza</span><span class="subtotal-tag" id="sub-Limpieza">0.00€</span></button>
-    <button class="boton" id="btn-Aseo" onclick="abrirCategoria('Aseo')"><i class="fas fa-pump-soap h"></i><span data-i18n="cat_hygiene">Higiene</span><span class="subtotal-tag" id="sub-Aseo">0.00€</span></button>
-    <button class="boton" id="btn-Papel/Varios" onclick="abrirCategoria('Papel/Varios')"><i class="fas fa-toilet-paper h"></i><span data-i18n="cat_paper">Papel/Varios</span><span class="subtotal-tag" id="sub-Papel/Varios">0.00€</span></button>
-    <button class="boton" id="btn-Mascotas" onclick="abrirCategoria('Mascotas')"><i class="fas fa-dog h"></i><span data-i18n="cat_pets">Mascotas</span><span class="subtotal-tag" id="sub-Mascotas">0.00€</span></button>
+    <button class="boton" id="btn-Aceite" onclick="abrirCategoria('Aceite')"><i class="fas fa-oil-can d"></i><span id="lbl-Aceite" data-i18n="cat_oils">Aceites</span><span class="subtotal-tag" id="sub-Aceite">0.00€</span></button>
+    <button class="boton" id="btn-Conservas" onclick="abrirCategoria('Conservas')"><i class="fas fa-jar d"></i><span id="lbl-Conservas" data-i18n="cat_canned">Conservas/Aceitunas</span><span class="subtotal-tag" id="sub-Conservas">0.00€</span></button>
+    <button class="boton" id="btn-Café" onclick="abrirCategoria('Café')"><i class="fas fa-mug-hot d"></i><span id="lbl-Café" data-i18n="cat_coffee">Café/Cacao</span><span class="subtotal-tag" id="sub-Café">0.00€</span></button>
+    <button class="boton" id="btn-Bebidas" onclick="abrirCategoria('Bebidas')"><i class="fas fa-bottle-water l"></i><span id="lbl-Bebidas" data-i18n="cat_drinks">Bebidas</span><span class="subtotal-tag" id="sub-Bebidas">0.00€</span></button>
+    <button class="boton" id="btn-Dulces" onclick="abrirCategoria('Dulces')"><i class="fas fa-cookie c"></i><span id="lbl-Dulces" data-i18n="cat_snacks">Snacks/Dulces</span><span class="subtotal-tag" id="sub-Dulces">0.00€</span></button>
+    <button class="boton" id="btn-Congelado" onclick="abrirCategoria('Congelado')"><i class="fas fa-snowflake l"></i><span id="lbl-Congelado" data-i18n="cat_frozen">Congelados</span><span class="subtotal-tag" id="sub-Congelado">0.00€</span></button>
+    <button class="boton" id="btn-Limpieza" onclick="abrirCategoria('Limpieza')"><i class="fas fa-soap h"></i><span id="lbl-Limpieza" data-i18n="cat_cleaning">Limpieza</span><span class="subtotal-tag" id="sub-Limpieza">0.00€</span></button>
+    <button class="boton" id="btn-Aseo" onclick="abrirCategoria('Aseo')"><i class="fas fa-pump-soap h"></i><span id="lbl-Aseo" data-i18n="cat_hygiene">Higiene</span><span class="subtotal-tag" id="sub-Aseo">0.00€</span></button>
+    <button class="boton" id="btn-Papel/Varios" onclick="abrirCategoria('Papel/Varios')"><i class="fas fa-toilet-paper h"></i><span id="lbl-Papel/Varios" data-i18n="cat_paper">Papel/Varios</span><span class="subtotal-tag" id="sub-Papel/Varios">0.00€</span></button>
+    <button class="boton" id="btn-Mascotas" onclick="abrirCategoria('Mascotas')"><i class="fas fa-dog h"></i><span id="lbl-Mascotas" data-i18n="cat_pets">Mascotas</span><span class="subtotal-tag" id="sub-Mascotas">0.00€</span></button>
 </div>
 
 <div class="historial" id="hist-list" onclick="abrirModal('modal-historial')"><b>Última Compra:</b> Cargando...</div>
@@ -262,11 +262,14 @@
     </div>
 </div>
 
-<!-- Modal Categoria -->
+<!-- Modal Categoria con Lápiz para Renombrar -->
 <div class="modal" id="modal-cat">
     <div class="modal-contenido">
         <div class="modal-header">
-            <h3 style="margin:0;" id="modal-cat-titulo">Categoría</h3>
+            <div style="display:flex; align-items:center; gap:8px;">
+                <h3 style="margin:0;" id="modal-cat-titulo">Categoría</h3>
+                <button class="btn-mini" onclick="renombrarCategoriaActiva()" title="Renombrar categoría" style="padding:4px 8px; font-size:12px;">✏️</button>
+            </div>
             <button class="btn-mini" onclick="cerrarModal('modal-cat')">✕</button>
         </div>
         
@@ -399,6 +402,7 @@
                 if(data.habituales_v130) localStorage.setItem('habituales_v130', data.habituales_v130);
                 if(data.compras_detalladas_v150) localStorage.setItem('compras_detalladas_v150', data.compras_detalladas_v150);
                 if(data.limite_v110) localStorage.setItem('limite_v110', data.limite_v110);
+                if(data.nombres_categorias_v260) localStorage.setItem('nombres_categorias_v260', data.nombres_categorias_v260);
             }
         } catch(e) {
             console.warn("Sin acceso a la nube, cargando sólo almacenamiento local:", e);
@@ -473,7 +477,7 @@
             calc_use: "📋 Use",
             offer_title: "⚖️ Offer / Weight Calculator:",
             price_label: "Price:",
-            grams_label: "Grams:",
+            grams_label: "Gramos:",
             units_label: "Qty:",
             frequents_sub: "⚡ Frequent Items (🏠 Mark if already at home):",
             add_product_sub: "📝 Add Item (You can save at €0.00 for list):",
@@ -555,6 +559,7 @@
     let limitePresupuesto = 150;
     let carroActual = [];
     let historialCompras = [];
+    let nombresCategorias = {};
     let categoriaActiva = '';
     let uds = 1, fSize = 14;
     let calcExpr = '';
@@ -693,7 +698,8 @@
             coincidencias.forEach(item => {
                 const div = document.createElement('div');
                 div.className = 'sugerencia-item';
-                div.innerHTML = `<span><strong>${item.nombre}</strong> (${item.categoria})</span><span style="color:var(--verde); font-weight:bold;">${item.precio > 0 ? '+ ' + item.precio.toFixed(2) + '€' : '⚠️ 0.00€'}</span>`;
+                const nombreMostrarCat = nombresCategorias[item.categoria] || item.categoria;
+                div.innerHTML = `<span><strong>${item.nombre}</strong> (${nombreMostrarCat})</span><span style="color:var(--verde); font-weight:bold;">${item.precio > 0 ? '+ ' + item.precio.toFixed(2) + '€' : '⚠️ 0.00€'}</span>`;
                 div.onclick = () => {
                     sumar(item.nombre, item.precio, item.categoria);
                     document.getElementById('buscador').value = '';
@@ -710,9 +716,34 @@
 
     function abrirCategoria(cat) {
         categoriaActiva = cat;
-        document.getElementById('modal-cat-titulo').innerText = cat;
+        actualizarEtiquetasCategorias();
         renderFrecuentes();
         abrirModal('modal-cat');
+    }
+
+    function renombrarCategoriaActiva() {
+        if(!categoriaActiva) return;
+        const actual = nombresCategorias[categoriaActiva] || categoriaActiva;
+        const msg = langKey === 'es' ? `Nuevo nombre para la categoría "${actual}":` : `New name for category "${actual}":`;
+        const nuevoNombre = prompt(msg, actual);
+        if(nuevoNombre === null) return;
+        const limpio = nuevoNombre.trim();
+        if(limpio === '') return;
+
+        nombresCategorias[categoriaActiva] = limpio;
+        guardarDatosDB('nombres_categorias_v260', nombresCategorias);
+        actualizarEtiquetasCategorias();
+        mostrarToast(`✏️ ${langKey === 'es' ? 'Nombre actualizado' : 'Name updated'}`);
+    }
+
+    function actualizarEtiquetasCategorias() {
+        for (let cat in nombresCategorias) {
+            const el = document.getElementById('lbl-' + cat);
+            if(el) el.innerText = nombresCategorias[cat];
+        }
+        if(categoriaActiva) {
+            document.getElementById('modal-cat-titulo').innerText = nombresCategorias[categoriaActiva] || categoriaActiva;
+        }
     }
 
     function renderFrecuentes() {
@@ -947,16 +978,19 @@
             const dbLimite = await obtenerDatoDB('limite_v110');
             const dbCarro = await obtenerDatoDB('carro_temp');
             const dbHistorial = await obtenerDatoDB('compras_detalladas_v150');
+            const dbNombresCat = await obtenerDatoDB('nombres_categorias_v260');
 
             habituales = dbHabituales || JSON.parse(localStorage.getItem('habituales_v130')) || frecuentesBase;
             limitePresupuesto = dbLimite || parseFloat(localStorage.getItem('limite_v110')) || 150;
             carroActual = dbCarro || JSON.parse(localStorage.getItem('carro_temp')) || [];
             historialCompras = dbHistorial || JSON.parse(localStorage.getItem('compras_detalladas_v150')) || [];
+            nombresCategorias = dbNombresCat || JSON.parse(localStorage.getItem('nombres_categorias_v260')) || {};
         } catch (e) {
             habituales = JSON.parse(localStorage.getItem('habituales_v130')) || frecuentesBase;
             limitePresupuesto = parseFloat(localStorage.getItem('limite_v110')) || 150;
             carroActual = JSON.parse(localStorage.getItem('carro_temp')) || [];
             historialCompras = JSON.parse(localStorage.getItem('compras_detalladas_v150')) || [];
+            nombresCategorias = JSON.parse(localStorage.getItem('nombres_categorias_v260')) || {};
         }
 
         if(!localStorage.getItem('tutorial_visto')) {
@@ -964,6 +998,7 @@
             localStorage.setItem('tutorial_visto', 'true');
         }
 
+        actualizarEtiquetasCategorias();
         actualizar();
     }
 
