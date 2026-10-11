@@ -76,6 +76,10 @@
         .item-habitual-precio-badge { background: var(--azul); color: white; font-size: 12px; font-weight: bold; padding: 2px 8px; border-radius: 6px; align-self: flex-start; }
         .item-habitual-acciones { display: flex; gap: 6px; align-items: center; }
 
+        .tarjeta-compra-guardada { background: rgba(0,0,0,0.05); border-radius: 10px; padding: 10px; margin-bottom: 10px; }
+        .tarjeta-compra-header { display: flex; justify-content: space-between; align-items: center; cursor: pointer; font-weight: bold; font-size: 14px; }
+        .tarjeta-compra-detalle { margin-top: 10px; border-top: 1px solid rgba(0,0,0,0.1); padding-top: 8px; font-size: 13px; }
+
         .form-nuevo-producto { display: flex; flex-direction: column; gap: 8px; margin-top: 8px; background: rgba(0,0,0,0.05); padding: 10px; border-radius: 10px; }
         .inputs-linea { display: flex; gap: 8px; }
         .inputs-linea input { padding: 10px; border-radius: 8px; border: 1px solid #ccc; font-size: 13px; box-sizing: border-box; }
@@ -312,7 +316,7 @@
     </div>
 </div>
 
-<!-- Modal Historial -->
+<!-- Modal Historial con Borrado Individual -->
 <div class="modal" id="modal-historial">
     <div class="modal-contenido">
         <div class="modal-header">
@@ -930,9 +934,12 @@
 
             return `
                 <div class="tarjeta-compra-guardada">
-                    <div class="tarjeta-compra-header" onclick="toggleDetalleCompra(${compra.id})">
-                        <span>🛒 ${compra.supermercado || 'Súper'} (${compra.fecha})</span>
-                        <span style="color:var(--azul);">${compra.total.toFixed(2)}€ 🔽</span>
+                    <div class="tarjeta-compra-header">
+                        <span onclick="toggleDetalleCompra(${compra.id})">🛒 ${compra.supermercado || 'Súper'} (${compra.fecha})</span>
+                        <div style="display:flex; align-items:center; gap:8px;">
+                            <span style="color:var(--azul);" onclick="toggleDetalleCompra(${compra.id})">${compra.total.toFixed(2)}€ 🔽</span>
+                            <button class="btn-mini" style="background:var(--rojo); color:white; padding:4px 8px; font-size:12px;" onclick="eliminarCompraUnica(${compra.id})" title="Borrar esta compra">🗑️</button>
+                        </div>
                     </div>
                     <div id="det-compra-${compra.id}" class="tarjeta-compra-detalle" style="display:${index === 0 ? 'block' : 'none'};">
                         ${compra.productos.map(p => `<div style="margin-bottom:6px;">• <strong>${p.nombre}</strong> (${p.unidades}x ${p.precioUnitario.toFixed(2)}€) = <strong>${p.total.toFixed(2)}€</strong></div>`).join('')}
@@ -943,6 +950,16 @@
                 </div>
             `;
         }).join('');
+    }
+
+    function eliminarCompraUnica(id) {
+        if (confirm(langKey === 'es' ? "¿Quieres borrar solo esta compra del historial?" : "Delete only this purchase from history?")) {
+            historialCompras = historialCompras.filter(c => c.id !== id);
+            guardarDatosDB('compras_detalladas_v150', historialCompras);
+            actualizar();
+            renderHistorialDetallado();
+            mostrarToast("🗑️ " + (langKey === 'es' ? "Compra eliminada" : "Purchase deleted"));
+        }
     }
 
     function toggleDetalleCompra(id) {
